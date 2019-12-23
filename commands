@@ -1,0 +1,34 @@
+ Find the path to the Python executable file
+which python
+
+# Check the `/usr/bin` directory for other executables that contain
+# the word 'python'
+ls /usr/bin/ | grep python
+
+# Check the version of the python executable
+python --version
+
+# Run Python in Shell mode
+python
+
+# Check the version if the python3 executable
+python3 --version
+
+# Run Python3 in Shell mode
+python3
+
+# Install the Flask package
+sudo pip3 install Flask
+
+# Check the locally installed packages
+pip3 freeze --local
+
+# Generate a `requirements.txt` file using the list of installed packages
+pip3 freeze --local > requirements.txt
+
+# Uninstall a package
+sudo pip3 uninstall Flask
+
+# Recursively install all of the packages specified in the
+# `requirements.txt` file
+sudo pip3 install -r requirements.txt
